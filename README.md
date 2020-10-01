@@ -3,6 +3,8 @@ This repository provides some useful Confluence user macros
 
 # Macro List
 
+* Jira Macro Wrapper - This is an example on how to obfuscate the Jira macro into a simple user macro. This example contains a single parameter. It uses this parameter to complete the Jira JQL embedded in the macro. Use this technique to simplify integration of Jira using the Jira add-on. Further simplification can be performed using built in Confluence page property values such as "$content.title." For example, if the $content.title matches field values in Jira, it can be used to filter issues. Therefore, a plug-in using this technique doesnt need to provide a parameter (e.g. ## @noparams).
+
 # References
 The following are links to helpful Confluence Resources
 

@@ -1,0 +1,16 @@
+## Macro title: Jira Macro Wrapper
+## Macro has a body: N
+## Categories: Reporting
+## Description: Wraps the Jira macro and displays a list of open issues from a specified project. This assumes that you have a connected Jira server with the Confluence server.
+##
+## Developed by: Frank Refol
+## Date created: 9/29/2020
+## Installed by: Frank Refol
+## @param project:title=Project|type=string|required=true|desc=The project
+<ac:structured-macro ac:name="jira" ac:schema-version="1">
+    <ac:parameter ac:name="server">JIRA</ac:parameter>
+    <ac:parameter ac:name="columns">key,summary,type,created,due,assignee,reporter,status</ac:parameter>
+    <ac:parameter ac:name="maximumIssues">20</ac:parameter>
+    <ac:parameter ac:name="jqlQuery">project = $project AND status in ("In Progress", "To Do") AND resolution = Unresolved ORDER BY priority DESC, updated DESC </ac:parameter>
+    ac:parameter ac:name="serverId">9d3b3c3f-d5c9-38fa-b19f-fabc967a7dc3</ac:parameter>
+</ac:structured-macro>
