@@ -1,0 +1,15 @@
+## Macro Name: buttonlink
+## Visibility: Visible to all users in the Macro Browser
+## Macro title: Button Link
+## Description: Create a button with a link to a URL.
+## Categories: Navigation
+## Icon URL:
+## Documentation URL:
+## Macro has a body: N
+## @param Title:title=Title|type=string|required=true
+## @param URL:title=URL|type=string|required=true
+<a href="$paramURL">
+    <button class="aui-button aui-button-primary">
+        $paramTitle
+    </button>
+</a>
