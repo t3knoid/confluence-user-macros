@@ -1,0 +1,13 @@
+## Macro name: createddate
+## Visibility: Visible to all users in the Macro Browser
+## Macro title: Created Date
+## Macro Description: This inserts the document created date.
+## Categories: Confluence Content
+## Icon URL:
+## Documentation URL:
+## Macro has a body: N
+## Date created: 31/Mar/2020
+## Installed by: F. Refol
+## @noparams
+
+$action.dateFormatter.formatGivenString("dd-MMM-yyyy", $content.getCreationDate())
