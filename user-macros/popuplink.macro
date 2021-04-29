@@ -1,0 +1,19 @@
+## Macro name: popuplink
+## Visibility: Visible to all users in the Macro Browser
+## Macro title: Pop-up Link
+## Macro Description: Pops-up a given URL page in a separate browser window.
+## Categories: Navigation
+## Icon URL:
+## Documentation URL:
+## Macro has a body: N
+## Developed by: Frank Refol
+## Date created: 2/3/2021
+## Installed by: Frank Refol
+## @param Title:title=Title|type=string|required=true
+## @param URL:title=URL|type=string|required=true
+
+<ac:structured-macro ac:name="html" ac:schema-version="1">
+  <ac:plain-text-body>
+    <![CDATA[
+        <a href="#" onClick="MyWindow=window.open('$paramURL','$Title','width=1024,height=600'); return false;">$paramTitle</a>]]></ac:plain-text-body>
+</ac:structured-macro>
